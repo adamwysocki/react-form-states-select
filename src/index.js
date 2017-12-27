@@ -11,24 +11,18 @@ import { states } from "./data/us-states";
 const NAME_LITERAL = "[NAME]";
 const ABBR_LITERAL = "[ABBR]";
 const DEFAULT_OPTION_STRING = "Select a state ...";
-
-/**
- * Styles for select dropdown.
- */
-const Wrapper = styled.div`
-  > select {
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
-  }
+const DEFAULT_SELECT_STYLE = `
+min-width: 10rem;
+padding: 0.5rem 0;
+margin: 0.125rem 0 0;
+font-size: 1rem;
+color: #212529;
+text-align: left;
+list-style: none;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid rgba(0, 0, 0, 0.15);
+border-radius: 0.25rem;
 `;
 
 /**
@@ -108,6 +102,13 @@ class StatesSelect extends React.Component<Props> {
     if (!this.props.hasDefaultOption) {
       defaultOption = null;
     }
+
+    const Wrapper = styled.div`
+      > select {
+        ${DEFAULT_SELECT_STYLE};
+      }
+    `;
+
     return (
       <Wrapper>
         <select id="state" name="state" onChange={this.change}>

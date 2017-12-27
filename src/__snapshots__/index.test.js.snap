@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="sc-bdVaJa dzlKVe"
+  className="sc-bdVaJa fXNkFd"
 >
   <select
     id="state"
@@ -315,7 +315,7 @@ exports[`should render 1`] = `
 
 exports[`should render with a custom formatted label 1`] = `
 <div
-  className="sc-bdVaJa dzlKVe"
+  className="sc-bxivhb kAlGYy"
 >
   <select
     id="state"
