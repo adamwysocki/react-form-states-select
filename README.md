@@ -35,3 +35,12 @@ onStateSelect = (event, state) => {
 
 <StatesSelect onChange={this.onStateSelect} />
 ```
+
+## Parameters
+
+| Parameter         | Type       | Description |
+| :---------------- | :--------- | :---------- |
+| onChange          | `Function` |             |
+| defaultOptionText | `String`   |             |
+| hasDefaultOption  | `Boolean`  |             |
+| valueTemplate     | `String`   |             |
