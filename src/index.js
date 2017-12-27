@@ -15,18 +15,20 @@ const DEFAULT_OPTION_STRING = "Select a state ...";
 /**
  * Styles for select dropdown.
  */
-const StateSelect = styled.select`
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+const Wrapper = styled.div`
+  > select {
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
 `;
 
 /**
@@ -107,8 +109,8 @@ class StatesSelect extends React.Component<Props> {
       defaultOption = null;
     }
     return (
-      <div>
-        <StateSelect id="state" name="state" onChange={this.change}>
+      <Wrapper>
+        <select id="state" name="state" onChange={this.change}>
           {defaultOption}
           {states.map((state, i) => {
             const valueTemplate = this.props.valueTemplate || NAME_LITERAL;
@@ -118,8 +120,8 @@ class StatesSelect extends React.Component<Props> {
               </option>
             );
           })}
-        </StateSelect>
-      </div>
+        </select>
+      </Wrapper>
     );
   }
 }

@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<div>
+<div
+  className="sc-bdVaJa dzlKVe"
+>
   <select
-    className="sc-bdVaJa xJEgG"
     id="state"
     name="state"
     onChange={[Function]}
@@ -313,9 +314,10 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render with a custom formatted label 1`] = `
-<div>
+<div
+  className="sc-bdVaJa dzlKVe"
+>
   <select
-    className="sc-bdVaJa xJEgG"
     id="state"
     name="state"
     onChange={[Function]}
