@@ -38,9 +38,9 @@ onStateSelect = (event, state) => {
 
 ## Parameters
 
-| Parameter         | Type       | Description |
-| :---------------- | :--------- | :---------- |
-| onChange          | `Function` |             |
-| defaultOptionText | `String`   |             |
-| hasDefaultOption  | `Boolean`  |             |
-| valueTemplate     | `String`   |             |
+| Parameter         | Type       | Description                                                                                                                                                                                                                                                                               |
+| :---------------- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| onChange          | `Function` | Callback with the selected state. Parameters are the HTML event and an object with the format { name: 'Maryland', abbreviation: 'MD' }                                                                                                                                                    |
+| defaultOptionText | `String`   | The label to display for the default/unselected option. A user selecting this option will not fire the callback. (default: "Select a state ...")                                                                                                                                          |
+| hasDefaultOption  | `Boolean`  | Toggle the default option on or off (default: true)                                                                                                                                                                                                                                       |
+| valueTemplate     | `String`   | A template to customize how the lable in the drop down is displayed. [NAME] will display the full state name. [ABBR] will display the two character state abbreviation. (default: [NAME]). These can be used in combination. ie. "([ABBR]) - [NAME]" which will display "(MD) - Maryland" |
