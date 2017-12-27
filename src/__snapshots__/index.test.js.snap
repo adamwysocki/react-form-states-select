@@ -6,6 +6,7 @@ exports[`should render 1`] = `
     className="sc-bdVaJa xJEgG"
     id="state"
     name="state"
+    onChange={[Function]}
   >
     <option
       value="null"
@@ -13,297 +14,297 @@ exports[`should render 1`] = `
       Select a state ...
     </option>
     <option
-      value="AL"
+      value={0}
     >
       Alabama
     </option>
     <option
-      value="AK"
+      value={1}
     >
       Alaska
     </option>
     <option
-      value="AS"
+      value={2}
     >
       American Samoa
     </option>
     <option
-      value="AZ"
+      value={3}
     >
       Arizona
     </option>
     <option
-      value="AR"
+      value={4}
     >
       Arkansas
     </option>
     <option
-      value="CA"
+      value={5}
     >
       California
     </option>
     <option
-      value="CO"
+      value={6}
     >
       Colorado
     </option>
     <option
-      value="CT"
+      value={7}
     >
       Connecticut
     </option>
     <option
-      value="DE"
+      value={8}
     >
       Delaware
     </option>
     <option
-      value="DC"
+      value={9}
     >
       District Of Columbia
     </option>
     <option
-      value="FM"
+      value={10}
     >
       Federated States Of Micronesia
     </option>
     <option
-      value="FL"
+      value={11}
     >
       Florida
     </option>
     <option
-      value="GA"
+      value={12}
     >
       Georgia
     </option>
     <option
-      value="GU"
+      value={13}
     >
       Guam
     </option>
     <option
-      value="HI"
+      value={14}
     >
       Hawaii
     </option>
     <option
-      value="ID"
+      value={15}
     >
       Idaho
     </option>
     <option
-      value="IL"
+      value={16}
     >
       Illinois
     </option>
     <option
-      value="IN"
+      value={17}
     >
       Indiana
     </option>
     <option
-      value="IA"
+      value={18}
     >
       Iowa
     </option>
     <option
-      value="KS"
+      value={19}
     >
       Kansas
     </option>
     <option
-      value="KY"
+      value={20}
     >
       Kentucky
     </option>
     <option
-      value="LA"
+      value={21}
     >
       Louisiana
     </option>
     <option
-      value="ME"
+      value={22}
     >
       Maine
     </option>
     <option
-      value="MH"
+      value={23}
     >
       Marshall Islands
     </option>
     <option
-      value="MD"
+      value={24}
     >
       Maryland
     </option>
     <option
-      value="MA"
+      value={25}
     >
       Massachusetts
     </option>
     <option
-      value="MI"
+      value={26}
     >
       Michigan
     </option>
     <option
-      value="MN"
+      value={27}
     >
       Minnesota
     </option>
     <option
-      value="MS"
+      value={28}
     >
       Mississippi
     </option>
     <option
-      value="MO"
+      value={29}
     >
       Missouri
     </option>
     <option
-      value="MT"
+      value={30}
     >
       Montana
     </option>
     <option
-      value="NE"
+      value={31}
     >
       Nebraska
     </option>
     <option
-      value="NV"
+      value={32}
     >
       Nevada
     </option>
     <option
-      value="NH"
+      value={33}
     >
       New Hampshire
     </option>
     <option
-      value="NJ"
+      value={34}
     >
       New Jersey
     </option>
     <option
-      value="NM"
+      value={35}
     >
       New Mexico
     </option>
     <option
-      value="NY"
+      value={36}
     >
       New York
     </option>
     <option
-      value="NC"
+      value={37}
     >
       North Carolina
     </option>
     <option
-      value="ND"
+      value={38}
     >
       North Dakota
     </option>
     <option
-      value="MP"
+      value={39}
     >
       Northern Mariana Islands
     </option>
     <option
-      value="OH"
+      value={40}
     >
       Ohio
     </option>
     <option
-      value="OK"
+      value={41}
     >
       Oklahoma
     </option>
     <option
-      value="OR"
+      value={42}
     >
       Oregon
     </option>
     <option
-      value="PW"
+      value={43}
     >
       Palau
     </option>
     <option
-      value="PA"
+      value={44}
     >
       Pennsylvania
     </option>
     <option
-      value="PR"
+      value={45}
     >
       Puerto Rico
     </option>
     <option
-      value="RI"
+      value={46}
     >
       Rhode Island
     </option>
     <option
-      value="SC"
+      value={47}
     >
       South Carolina
     </option>
     <option
-      value="SD"
+      value={48}
     >
       South Dakota
     </option>
     <option
-      value="TN"
+      value={49}
     >
       Tennessee
     </option>
     <option
-      value="TX"
+      value={50}
     >
       Texas
     </option>
     <option
-      value="UT"
+      value={51}
     >
       Utah
     </option>
     <option
-      value="VT"
+      value={52}
     >
       Vermont
     </option>
     <option
-      value="VI"
+      value={53}
     >
       Virgin Islands
     </option>
     <option
-      value="VA"
+      value={54}
     >
       Virginia
     </option>
     <option
-      value="WA"
+      value={55}
     >
       Washington
     </option>
     <option
-      value="WV"
+      value={56}
     >
       West Virginia
     </option>
     <option
-      value="WI"
+      value={57}
     >
       Wisconsin
     </option>
     <option
-      value="WY"
+      value={58}
     >
       Wyoming
     </option>
@@ -317,6 +318,7 @@ exports[`should render with a custom formatted label 1`] = `
     className="sc-bdVaJa xJEgG"
     id="state"
     name="state"
+    onChange={[Function]}
   >
     <option
       value="null"
@@ -324,297 +326,297 @@ exports[`should render with a custom formatted label 1`] = `
       Select a state ...
     </option>
     <option
-      value="AL"
+      value={0}
     >
       AL - [STATE]
     </option>
     <option
-      value="AK"
+      value={1}
     >
       AK - [STATE]
     </option>
     <option
-      value="AS"
+      value={2}
     >
       AS - [STATE]
     </option>
     <option
-      value="AZ"
+      value={3}
     >
       AZ - [STATE]
     </option>
     <option
-      value="AR"
+      value={4}
     >
       AR - [STATE]
     </option>
     <option
-      value="CA"
+      value={5}
     >
       CA - [STATE]
     </option>
     <option
-      value="CO"
+      value={6}
     >
       CO - [STATE]
     </option>
     <option
-      value="CT"
+      value={7}
     >
       CT - [STATE]
     </option>
     <option
-      value="DE"
+      value={8}
     >
       DE - [STATE]
     </option>
     <option
-      value="DC"
+      value={9}
     >
       DC - [STATE]
     </option>
     <option
-      value="FM"
+      value={10}
     >
       FM - [STATE]
     </option>
     <option
-      value="FL"
+      value={11}
     >
       FL - [STATE]
     </option>
     <option
-      value="GA"
+      value={12}
     >
       GA - [STATE]
     </option>
     <option
-      value="GU"
+      value={13}
     >
       GU - [STATE]
     </option>
     <option
-      value="HI"
+      value={14}
     >
       HI - [STATE]
     </option>
     <option
-      value="ID"
+      value={15}
     >
       ID - [STATE]
     </option>
     <option
-      value="IL"
+      value={16}
     >
       IL - [STATE]
     </option>
     <option
-      value="IN"
+      value={17}
     >
       IN - [STATE]
     </option>
     <option
-      value="IA"
+      value={18}
     >
       IA - [STATE]
     </option>
     <option
-      value="KS"
+      value={19}
     >
       KS - [STATE]
     </option>
     <option
-      value="KY"
+      value={20}
     >
       KY - [STATE]
     </option>
     <option
-      value="LA"
+      value={21}
     >
       LA - [STATE]
     </option>
     <option
-      value="ME"
+      value={22}
     >
       ME - [STATE]
     </option>
     <option
-      value="MH"
+      value={23}
     >
       MH - [STATE]
     </option>
     <option
-      value="MD"
+      value={24}
     >
       MD - [STATE]
     </option>
     <option
-      value="MA"
+      value={25}
     >
       MA - [STATE]
     </option>
     <option
-      value="MI"
+      value={26}
     >
       MI - [STATE]
     </option>
     <option
-      value="MN"
+      value={27}
     >
       MN - [STATE]
     </option>
     <option
-      value="MS"
+      value={28}
     >
       MS - [STATE]
     </option>
     <option
-      value="MO"
+      value={29}
     >
       MO - [STATE]
     </option>
     <option
-      value="MT"
+      value={30}
     >
       MT - [STATE]
     </option>
     <option
-      value="NE"
+      value={31}
     >
       NE - [STATE]
     </option>
     <option
-      value="NV"
+      value={32}
     >
       NV - [STATE]
     </option>
     <option
-      value="NH"
+      value={33}
     >
       NH - [STATE]
     </option>
     <option
-      value="NJ"
+      value={34}
     >
       NJ - [STATE]
     </option>
     <option
-      value="NM"
+      value={35}
     >
       NM - [STATE]
     </option>
     <option
-      value="NY"
+      value={36}
     >
       NY - [STATE]
     </option>
     <option
-      value="NC"
+      value={37}
     >
       NC - [STATE]
     </option>
     <option
-      value="ND"
+      value={38}
     >
       ND - [STATE]
     </option>
     <option
-      value="MP"
+      value={39}
     >
       MP - [STATE]
     </option>
     <option
-      value="OH"
+      value={40}
     >
       OH - [STATE]
     </option>
     <option
-      value="OK"
+      value={41}
     >
       OK - [STATE]
     </option>
     <option
-      value="OR"
+      value={42}
     >
       OR - [STATE]
     </option>
     <option
-      value="PW"
+      value={43}
     >
       PW - [STATE]
     </option>
     <option
-      value="PA"
+      value={44}
     >
       PA - [STATE]
     </option>
     <option
-      value="PR"
+      value={45}
     >
       PR - [STATE]
     </option>
     <option
-      value="RI"
+      value={46}
     >
       RI - [STATE]
     </option>
     <option
-      value="SC"
+      value={47}
     >
       SC - [STATE]
     </option>
     <option
-      value="SD"
+      value={48}
     >
       SD - [STATE]
     </option>
     <option
-      value="TN"
+      value={49}
     >
       TN - [STATE]
     </option>
     <option
-      value="TX"
+      value={50}
     >
       TX - [STATE]
     </option>
     <option
-      value="UT"
+      value={51}
     >
       UT - [STATE]
     </option>
     <option
-      value="VT"
+      value={52}
     >
       VT - [STATE]
     </option>
     <option
-      value="VI"
+      value={53}
     >
       VI - [STATE]
     </option>
     <option
-      value="VA"
+      value={54}
     >
       VA - [STATE]
     </option>
     <option
-      value="WA"
+      value={55}
     >
       WA - [STATE]
     </option>
     <option
-      value="WV"
+      value={56}
     >
       WV - [STATE]
     </option>
     <option
-      value="WI"
+      value={57}
     >
       WI - [STATE]
     </option>
     <option
-      value="WY"
+      value={58}
     >
       WY - [STATE]
     </option>
