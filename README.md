@@ -18,8 +18,8 @@ npm install react-form-states-select
 import StatesSelect from "react-form-states-select";
 ```
 
-2 . Include react-tooltip component
+2 . Include react-form-states-select component
 
 ```js
-<StatesSelect />
+<StatesSelect onChange={this.onStateSelect} />
 ```
