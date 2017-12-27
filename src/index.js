@@ -59,7 +59,7 @@ class StatesSelect extends React.Component<Props> {
       <div>
         <StateSelect id="state" name="state">
           {defaultOption}
-          {states.map((state, i) => {
+          {states.map(state => {
             const valueTemplate = this.props.valueTemplate || NAME_LITERAL;
             return (
               <option key={state.name} value={state.abbreviation}>

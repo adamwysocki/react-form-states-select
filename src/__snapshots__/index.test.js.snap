@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`it renders 1`] = `
+exports[`should render 1`] = `
 <div>
   <select
     className="sc-bdVaJa xJEgG"
@@ -306,6 +306,317 @@ exports[`it renders 1`] = `
       value="WY"
     >
       Wyoming
+    </option>
+  </select>
+</div>
+`;
+
+exports[`should render with a custom formatted label 1`] = `
+<div>
+  <select
+    className="sc-bdVaJa xJEgG"
+    id="state"
+    name="state"
+  >
+    <option
+      value="null"
+    >
+      Select a state ...
+    </option>
+    <option
+      value="AL"
+    >
+      AL - [STATE]
+    </option>
+    <option
+      value="AK"
+    >
+      AK - [STATE]
+    </option>
+    <option
+      value="AS"
+    >
+      AS - [STATE]
+    </option>
+    <option
+      value="AZ"
+    >
+      AZ - [STATE]
+    </option>
+    <option
+      value="AR"
+    >
+      AR - [STATE]
+    </option>
+    <option
+      value="CA"
+    >
+      CA - [STATE]
+    </option>
+    <option
+      value="CO"
+    >
+      CO - [STATE]
+    </option>
+    <option
+      value="CT"
+    >
+      CT - [STATE]
+    </option>
+    <option
+      value="DE"
+    >
+      DE - [STATE]
+    </option>
+    <option
+      value="DC"
+    >
+      DC - [STATE]
+    </option>
+    <option
+      value="FM"
+    >
+      FM - [STATE]
+    </option>
+    <option
+      value="FL"
+    >
+      FL - [STATE]
+    </option>
+    <option
+      value="GA"
+    >
+      GA - [STATE]
+    </option>
+    <option
+      value="GU"
+    >
+      GU - [STATE]
+    </option>
+    <option
+      value="HI"
+    >
+      HI - [STATE]
+    </option>
+    <option
+      value="ID"
+    >
+      ID - [STATE]
+    </option>
+    <option
+      value="IL"
+    >
+      IL - [STATE]
+    </option>
+    <option
+      value="IN"
+    >
+      IN - [STATE]
+    </option>
+    <option
+      value="IA"
+    >
+      IA - [STATE]
+    </option>
+    <option
+      value="KS"
+    >
+      KS - [STATE]
+    </option>
+    <option
+      value="KY"
+    >
+      KY - [STATE]
+    </option>
+    <option
+      value="LA"
+    >
+      LA - [STATE]
+    </option>
+    <option
+      value="ME"
+    >
+      ME - [STATE]
+    </option>
+    <option
+      value="MH"
+    >
+      MH - [STATE]
+    </option>
+    <option
+      value="MD"
+    >
+      MD - [STATE]
+    </option>
+    <option
+      value="MA"
+    >
+      MA - [STATE]
+    </option>
+    <option
+      value="MI"
+    >
+      MI - [STATE]
+    </option>
+    <option
+      value="MN"
+    >
+      MN - [STATE]
+    </option>
+    <option
+      value="MS"
+    >
+      MS - [STATE]
+    </option>
+    <option
+      value="MO"
+    >
+      MO - [STATE]
+    </option>
+    <option
+      value="MT"
+    >
+      MT - [STATE]
+    </option>
+    <option
+      value="NE"
+    >
+      NE - [STATE]
+    </option>
+    <option
+      value="NV"
+    >
+      NV - [STATE]
+    </option>
+    <option
+      value="NH"
+    >
+      NH - [STATE]
+    </option>
+    <option
+      value="NJ"
+    >
+      NJ - [STATE]
+    </option>
+    <option
+      value="NM"
+    >
+      NM - [STATE]
+    </option>
+    <option
+      value="NY"
+    >
+      NY - [STATE]
+    </option>
+    <option
+      value="NC"
+    >
+      NC - [STATE]
+    </option>
+    <option
+      value="ND"
+    >
+      ND - [STATE]
+    </option>
+    <option
+      value="MP"
+    >
+      MP - [STATE]
+    </option>
+    <option
+      value="OH"
+    >
+      OH - [STATE]
+    </option>
+    <option
+      value="OK"
+    >
+      OK - [STATE]
+    </option>
+    <option
+      value="OR"
+    >
+      OR - [STATE]
+    </option>
+    <option
+      value="PW"
+    >
+      PW - [STATE]
+    </option>
+    <option
+      value="PA"
+    >
+      PA - [STATE]
+    </option>
+    <option
+      value="PR"
+    >
+      PR - [STATE]
+    </option>
+    <option
+      value="RI"
+    >
+      RI - [STATE]
+    </option>
+    <option
+      value="SC"
+    >
+      SC - [STATE]
+    </option>
+    <option
+      value="SD"
+    >
+      SD - [STATE]
+    </option>
+    <option
+      value="TN"
+    >
+      TN - [STATE]
+    </option>
+    <option
+      value="TX"
+    >
+      TX - [STATE]
+    </option>
+    <option
+      value="UT"
+    >
+      UT - [STATE]
+    </option>
+    <option
+      value="VT"
+    >
+      VT - [STATE]
+    </option>
+    <option
+      value="VI"
+    >
+      VI - [STATE]
+    </option>
+    <option
+      value="VA"
+    >
+      VA - [STATE]
+    </option>
+    <option
+      value="WA"
+    >
+      WA - [STATE]
+    </option>
+    <option
+      value="WV"
+    >
+      WV - [STATE]
+    </option>
+    <option
+      value="WI"
+    >
+      WI - [STATE]
+    </option>
+    <option
+      value="WY"
+    >
+      WY - [STATE]
     </option>
   </select>
 </div>
