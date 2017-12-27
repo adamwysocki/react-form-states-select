@@ -60,6 +60,7 @@ class StatesSelect extends React.Component<Props> {
    * @property {bool} [hasDefaultOption] - Toggles default option on/off.
    * @property {string} [defaultOptionText] - Customized text for the default option.
    * @property {string} [valueTemplate] - Customized template for the "value" in each select option.
+   * @property {func} onChange - Function to fire with newly selected data
    */
   static propTypes = {
     hasDefaultOption: PropTypes.bool,
@@ -81,6 +82,14 @@ class StatesSelect extends React.Component<Props> {
     return template;
   };
 
+  /**
+   * Handle onChange fired from select element. Checks to make sure the default option
+   * doesn't fire a change.
+   *
+   * @memberof StatesSelect class.
+   * @param {SyntheticEvent<HTMLSelectElement>} event - The html event object
+   *
+   */
   change = (event: SyntheticEvent<HTMLSelectElement>) => {
     const index = event.currentTarget.value;
     if (index === "null") return;
