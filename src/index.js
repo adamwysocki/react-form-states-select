@@ -6,6 +6,10 @@ import PropTypes from "prop-types";
 
 import { states } from "./data/us-states";
 
+const NAME_LITERAL = "[NAME]";
+const ABBR_LITERAL = "[ABBR]";
+const DEFAULT_OPTION_STRING = "Select a state ...";
+
 const StateSelect = styled.select`
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -22,18 +26,27 @@ const StateSelect = styled.select`
 
 type Props = {
   defaultOptionText?: string,
-  hasDefaultOption?: boolean
+  hasDefaultOption?: boolean,
+  valueTemplate?: string
 };
 
 class StatesSelect extends React.Component<Props> {
   static defaultProps = {
     hasDefaultOption: true,
-    defaultOptionText: "Select a state ..."
+    defaultOptionText: DEFAULT_OPTION_STRING,
+    valueTemplate: NAME_LITERAL
   };
 
   static propTypes = {
     hasDefaultOption: PropTypes.bool,
-    defaultOptionText: PropTypes.string
+    defaultOptionText: PropTypes.string,
+    valueTemplate: PropTypes.string
+  };
+
+  parseTemplate = (template: string, stateName: string, stateAbbreivation: string) => {
+    template = template.replace(NAME_LITERAL, stateName);
+    template = template.replace(ABBR_LITERAL, stateAbbreivation);
+    return template;
   };
 
   render() {
@@ -42,15 +55,15 @@ class StatesSelect extends React.Component<Props> {
     if (!this.props.hasDefaultOption) {
       defaultOption = null;
     }
-
     return (
       <div>
         <StateSelect id="state" name="state">
           {defaultOption}
           {states.map((state, i) => {
+            const valueTemplate = this.props.valueTemplate || NAME_LITERAL;
             return (
               <option key={state.name} value={state.abbreviation}>
-                {state.name}
+                {this.parseTemplate(valueTemplate, state.name, state.abbreviation)}
               </option>
             );
           })}
