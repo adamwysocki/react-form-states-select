@@ -1,4 +1,5 @@
 [ignore]
+.*/build/*
 
 [include]
 
@@ -7,5 +8,10 @@
 [lints]
 
 [options]
+suppress_comment=.*\\$FlowFixMe
+suppress_comment=.*\\$FlowIssue
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+emoji=true
 
 [strict]

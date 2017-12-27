@@ -88,13 +88,12 @@ class StatesSelect extends React.Component<Props> {
    *
    * @memberof StatesSelect class.
    * @param {SyntheticEvent<HTMLSelectElement>} event - The html event object
-   *
    */
   change = (event: SyntheticEvent<HTMLSelectElement>) => {
     const index = event.currentTarget.value;
     if (index === "null") return;
     const selectedState = states[index];
-    this.props.onChange(selectedState);
+    this.props.onChange(event, selectedState);
   };
 
   /**
