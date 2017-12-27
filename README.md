@@ -27,7 +27,7 @@ import StatesSelect from "react-form-states-select";
 ```js
 onStateSelect = (event, state) => {
     // event {SyntheticEvent<HTMLSelectElement>} - React HTML event
-    // state {object} - Object representing the state
+    // state {Object} - Object representing the state
     // state.name {string} - The full name of the selected state
     // state.abbreviation {string} - The two letter abbreviation of the states name
 }
