@@ -14,7 +14,8 @@
     "test": "jest",
     "start": "webpack --watch",
     "build": "webpack",
-    "lint": "eslint src; exit 0"
+    "lint": "eslint src; exit 0",
+    "flow": "flow"
   },
   "author": {
     "name": "Adam Wysocki",

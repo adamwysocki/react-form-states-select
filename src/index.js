@@ -1,15 +1,20 @@
 /* @flow */
-
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { states } from "./data/us-states";
 
+/**
+ * Some constants.
+ */
 const NAME_LITERAL = "[NAME]";
 const ABBR_LITERAL = "[ABBR]";
 const DEFAULT_OPTION_STRING = "Select a state ...";
 
+/**
+ * Styles for select dropdown.
+ */
 const StateSelect = styled.select`
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -24,31 +29,60 @@ const StateSelect = styled.select`
   border-radius: 0.25rem;
 `;
 
+/**
+ * Type definition for class props.
+ */
 type Props = {
   defaultOptionText?: string,
   hasDefaultOption?: boolean,
   valueTemplate?: string
 };
 
+/**
+ * React class for state select in a form
+ * @class StatesSelect
+ */
 class StatesSelect extends React.Component<Props> {
+  /**
+   * @memberof StatesSelect
+   * @static
+   */
   static defaultProps = {
     hasDefaultOption: true,
     defaultOptionText: DEFAULT_OPTION_STRING,
     valueTemplate: NAME_LITERAL
   };
 
+  /**
+   * @memberof StatesSelect class.
+   * @static
+   * @property {bool} [hasDefaultOption] - Toggles default option on/off.
+   * @property {string} [defaultOptionText] - Customized text for the default option.
+   * @property {string} [valueTemplate] - Customized template for the "value" in each select option.
+   */
   static propTypes = {
     hasDefaultOption: PropTypes.bool,
     defaultOptionText: PropTypes.string,
     valueTemplate: PropTypes.string
   };
 
+  /**
+   * Parse the template passed in to display each option's "value".
+   * @memberof StatesSelect class.
+   * @param {string} template - The template passed into the component.
+   * @param {string} stateName - The name of the state from the current iteration.
+   * @param {string} stateAbbreviation - The two charater abbreviation for the state from the current iteration.
+   */
   parseTemplate = (template: string, stateName: string, stateAbbreivation: string) => {
     template = template.replace(NAME_LITERAL, stateName);
     template = template.replace(ABBR_LITERAL, stateAbbreivation);
     return template;
   };
 
+  /**
+   * React render method.
+   * @return {string} - HTML markup for the component.
+   */
   render() {
     let defaultOption = <option value="null">{this.props.defaultOptionText}</option>;
 
