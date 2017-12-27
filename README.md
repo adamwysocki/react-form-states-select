@@ -7,12 +7,14 @@ A state select component for React
 ## Installation
 
 ```sh
+yarn add react-form-states-select
+
+- or -
+
 npm install react-form-states-select
 ```
 
 ## Usage
-
-**Using NPM**
 
 1 . Require react-form-states-select after installation
 
