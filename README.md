@@ -1,6 +1,7 @@
 # react-form-states-select
 
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[ ![Codeship Status for adamwysocki/react-form-states-select](https://app.codeship.com/projects/0f13f5d0-cd5a-0135-da01-166a8e542bbe/status?branch=master)](https://app.codeship.com/projects/262034)
 
 A state select component for React
 
@@ -34,5 +35,3 @@ onStateSelect = (event, state) => {
 
 <StatesSelect onChange={this.onStateSelect} />
 ```
-
-Update
