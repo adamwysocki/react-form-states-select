@@ -2,3 +2,5 @@
 lib
 src
 CODE_OF_CONDUCT.md
+.vscode
+coverage
