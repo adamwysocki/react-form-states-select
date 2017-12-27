@@ -1,6 +1,6 @@
 {
   "name": "react-form-states-select",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A react select component with the fifty states",
   "main": "build/index.js",
   "peerDependencies": {
