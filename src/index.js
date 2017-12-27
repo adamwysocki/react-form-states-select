@@ -35,7 +35,8 @@ const StateSelect = styled.select`
 type Props = {
   defaultOptionText?: string,
   hasDefaultOption?: boolean,
-  valueTemplate?: string
+  valueTemplate?: string,
+  onChange: Function
 };
 
 /**
@@ -63,7 +64,8 @@ class StatesSelect extends React.Component<Props> {
   static propTypes = {
     hasDefaultOption: PropTypes.bool,
     defaultOptionText: PropTypes.string,
-    valueTemplate: PropTypes.string
+    valueTemplate: PropTypes.string,
+    onChange: PropTypes.func.isRequired
   };
 
   /**
@@ -79,6 +81,13 @@ class StatesSelect extends React.Component<Props> {
     return template;
   };
 
+  change = (event: SyntheticEvent<HTMLSelectElement>) => {
+    const index = event.currentTarget.value;
+    if (index === "null") return;
+    const selectedState = states[index];
+    this.props.onChange(selectedState);
+  };
+
   /**
    * React render method.
    * @return {string} - HTML markup for the component.
@@ -91,12 +100,12 @@ class StatesSelect extends React.Component<Props> {
     }
     return (
       <div>
-        <StateSelect id="state" name="state">
+        <StateSelect id="state" name="state" onChange={this.change}>
           {defaultOption}
-          {states.map(state => {
+          {states.map((state, i) => {
             const valueTemplate = this.props.valueTemplate || NAME_LITERAL;
             return (
-              <option key={state.name} value={state.abbreviation}>
+              <option key={state.name} value={i}>
                 {this.parseTemplate(valueTemplate, state.name, state.abbreviation)}
               </option>
             );
