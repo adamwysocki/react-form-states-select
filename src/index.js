@@ -32,7 +32,9 @@ type Props = {
   defaultOptionText?: string,
   hasDefaultOption?: boolean,
   valueTemplate?: string,
-  onChange: Function
+  onChange: Function,
+  style?: any,
+  className?: string
 };
 
 /**
@@ -47,7 +49,9 @@ class StatesSelect extends React.Component<Props> {
   static defaultProps = {
     hasDefaultOption: true,
     defaultOptionText: DEFAULT_OPTION_STRING,
-    valueTemplate: NAME_LITERAL
+    valueTemplate: NAME_LITERAL,
+    style: {},
+    className: null
   };
 
   /**
@@ -57,12 +61,16 @@ class StatesSelect extends React.Component<Props> {
    * @property {string} [defaultOptionText] - Customized text for the default option.
    * @property {string} [valueTemplate] - Customized template for the "value" in each select option.
    * @property {func} onChange - Function to fire with newly selected data
+   * @property {Object} style - React style. Javascript object with camelCase css properties.
+   * @property {string} className - CSS class. Overrides all default styles (see render method)
    */
   static propTypes = {
     hasDefaultOption: PropTypes.bool,
     defaultOptionText: PropTypes.string,
     valueTemplate: PropTypes.string,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    style: PropTypes.any,
+    className: PropTypes.string
   };
 
   /**
@@ -97,21 +105,36 @@ class StatesSelect extends React.Component<Props> {
    * @return {string} - HTML markup for the component.
    */
   render() {
+    // Setup the default option
     let defaultOption = <option value="null">{this.props.defaultOptionText}</option>;
 
     if (!this.props.hasDefaultOption) {
       defaultOption = null;
     }
 
+    // Setup the style. className won't override styled component, so if caller specifies
+    // className, set styled component style to nothing. It's all or none.
+    let componentStyle = DEFAULT_SELECT_STYLE;
+
+    if (this.props.className) {
+      componentStyle = "";
+    }
+
     const Wrapper = styled.div`
       > select {
-        ${DEFAULT_SELECT_STYLE};
+        ${componentStyle};
       }
     `;
 
     return (
       <Wrapper>
-        <select id="state" name="state" onChange={this.change}>
+        <select
+          id="state"
+          name="state"
+          onChange={this.change}
+          style={this.props.style}
+          className={this.props.className || ""}
+        >
           {defaultOption}
           {states.map((state, i) => {
             const valueTemplate = this.props.valueTemplate || NAME_LITERAL;

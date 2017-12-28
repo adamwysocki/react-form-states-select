@@ -44,6 +44,8 @@ onStateSelect = (event, state) => {
 | defaultOptionText | `string`   | The label to display for the default/unselected option. A user selecting this option will not fire the callback. (default: "Select a state ...")                                                                                                                                          |
 | hasDefaultOption  | `boolean`  | Toggle the default option on or off (default: true)                                                                                                                                                                                                                                       |
 | valueTemplate     | `string`   | A template to customize how the label in the drop down is displayed. [NAME] will display the full state name. [ABBR] will display the two character state abbreviation. (default: [NAME]). These can be used in combination. ie. "([ABBR]) - [NAME]" which will display "(MD) - Maryland" |
+| style             | `Object`   | Javascript object with camelCased CSS properties rather than a CSS string. Standard React styles                                                                                                                                                                                          |
+| className         | `string`   | A CSS class name. The presence of this attribute will override all default styles. So it's all or none                                                                                                                                                                                    |
 
 ## Build
 

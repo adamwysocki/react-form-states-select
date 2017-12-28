@@ -1,6 +1,8 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
+  devtool: "source-map",
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
@@ -25,5 +27,16 @@ module.exports = {
   },
   externals: {
     react: "commonjs react"
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      output: {
+        comments: false
+      }
+    }),
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify("production")
+    })
+  ]
 };
