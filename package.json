@@ -1,12 +1,18 @@
 {
   "name": "react-form-states-select",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A react select component with the fifty states",
   "repository": {
     "type": "git",
     "url": "https://github.com/adamwysocki/react-form-states-select.git"
   },
-  "keywords": ["react", "states", "select", "dropdown", "react-component"],
+  "keywords": [
+    "react",
+    "states",
+    "select",
+    "dropdown",
+    "react-component"
+  ],
   "main": "build/index.js",
   "peerDependencies": {
     "react": "^16.2.0"
