@@ -5,9 +5,11 @@ exports[`should render 1`] = `
   className="sc-bdVaJa fXNkFd"
 >
   <select
+    className=""
     id="state"
     name="state"
     onChange={[Function]}
+    style={Object {}}
   >
     <option
       value="null"
@@ -318,9 +320,11 @@ exports[`should render with a custom formatted label 1`] = `
   className="sc-bxivhb kAlGYy"
 >
   <select
+    className=""
     id="state"
     name="state"
     onChange={[Function]}
+    style={Object {}}
   >
     <option
       value="null"
